@@ -23,8 +23,9 @@ Step9: If no offer specified, state the orginal amount
 
 Step11: Display in table format using print(f"{'String':<20}")
 
-
 """
+
+#Specify all the products in a dictionary
 products = {
    "Britania Marie" : [50, "Buy:3 Get:2 Free"],
    "ParleG HappyHappy": [90, ""],
