@@ -1,5 +1,17 @@
 """
 ODD EVEN'S GAME
+Step1: Create function to choose odd even by the player and also by the computer using random module
+    --> Starts with the player and then whoever wins the turn get to choose odd/even for the next turn
+Step2: Create function to get the player_input of number and computer imput of number [1-6]
+    --> return the total, player_input, computer_input
+Step3: Create function to check who win the turn  --> total % 2== 0: Even  | total % 2 == 1: Odd
+    --> Use condition to check who wins player or computer
+    --> Increment the score who wins
+    --> Return player_turn = False if computer wins
+Step4: Ask the player for the max points, he want to play for
+Step5: USe while loop to loop until the computer_points or player_points reach max
+    --> Inititate the function one after another
+Step6: After exiting loop check who has scored max_points ---> who scored wins the game
 """
 
 import random
@@ -42,6 +54,7 @@ def who_win(player_choose, computer_choose, total, player_points, computer_point
 
 player_points = 0
 computer_points = 0
+print("\n------------- WELCOME TO ODD EVEN'S GAME -----------\n")
 max_points = int(input("For how many points do you want to play: "))
 player_turn = True
 
