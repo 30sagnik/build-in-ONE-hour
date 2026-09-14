@@ -13,26 +13,26 @@ numbers = [0,1,2,3,4,5,6,7,8,9]
 
 find = int(input("Enter number you want to find: "))
 
-def binarysearch(list, steps = 0):
-   if len(list) == 0:
+def binarysearch(num_list, steps = 0):
+   if len(num_list) == 0:
       return False
    
-   middle_idx = len(list) //2
-   middle = list[middle_idx]
+   middle_idx = len(num_list) //2
+   middle = num_list[middle_idx]
    steps += 1
    print(f"Check: {middle}")
    if find == middle:
       print(f"Match found! \nAnswer: {middle}")
       print(f"Total Steps needed: {steps}")
       return True, steps
-   elif find > middle and find <= list[-1]:
-      list = list[middle_idx+1:]
+   elif find > middle and find <= num_list[-1]:
+      num_list = num_list[middle_idx+1:]
       print("Higher")
-      return binarysearch(list, steps)
-   elif find < middle and find >= list[0]:
-      list = list[:middle_idx]
+      return binarysearch(num_list, steps)
+   elif find < middle and find >= num_list[0]:
+      num_list = num_list[:middle_idx]
       print("Lower")
-      return binarysearch(list, steps)
+      return binarysearch(num_list, steps)
    print("Item not found")
 
 binarysearch(numbers)
