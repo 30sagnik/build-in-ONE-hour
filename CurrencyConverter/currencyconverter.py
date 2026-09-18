@@ -1,6 +1,6 @@
 """
 CURRENCY CONVERTER
-Note: Here we returned function from another function
+Note: Here we returned function from another function. These are called closures
 Step1: Create a function with input of current currency, target_currency, and the dictionary having rates of all currencies
 Step2: Define another function taking input of the amount.
     --> Define the formula to convert the value from current currency to USD, then from USD to target currency
